@@ -1,0 +1,19 @@
+/*
+Theme Name: 장가네 흑염소 (janggane-heukyeomso)
+Theme URI: https://github.com/kim6410/janggane-heukyeomso
+Author: janggane-heukyeomso project
+Description: 정자골 장가네 농장직영 흑염소 보양탕 — 자체 제작 PHP 테마 (1차 화면 초안, 코드 스켈레톤 단계).
+             Elementor/블록 테마를 사용하지 않는 순수 자체 테마입니다. 실제 디자인/스타일은
+             assets/css/main.css 에서 관리하며, 이 파일은 WordPress 테마 인식용 헤더 정보만 담습니다.
+Version: 0.1.0
+Requires at least: 6.0
+Requires PHP: 7.4
+Text Domain: janggane-heukyeomso
+
+TODO(코드 작성 단계 공통): 전화번호/주소/영업시간/지도 링크는 현재 템플릿 곳곳에
+"임시값(TODO)"으로 하드코딩되어 있습니다. WordPress 관리자 옵션 페이지가 만들어지면
+전부 그 옵션 값을 읽도록 교체해야 합니다 (WORDPRESS_THEME_PLAN.md 3절 참고).
+*/
+
+/* 실제 스타일은 functions.php에서 enqueue하는 assets/css/main.css 를 사용합니다.
+   이 파일에는 WordPress가 테마를 인식하기 위한 최소 정보만 둡니다. */
