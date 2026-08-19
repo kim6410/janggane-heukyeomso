@@ -123,3 +123,47 @@ _release/janggane-heukyeomso-theme-YYYYMMDD_HHMMSS.zip
 - WordPress 관리자 계정 접속 가능 여부 확인
 - 메뉴판/가격/영업시간/휴무/주차 정보 확보
 - 사진 후보 20장 중 실제 사용 승인
+
+## 10. 기존 Hostinger 사이트와 혼동 방지 규칙
+
+이 프로젝트는 기존 SSU PRINT, WordPress 테스트 사이트, 다른 고객 사이트와 절대 섞지 않는다.
+아래 값은 참고 기록으로만 사용하고, 장가네 흑염소 배포 대상으로 사용하지 않는다.
+
+사용 금지 대상 예시:
+
+- `ssuprint.com`
+- `wp.ssuprint.com`
+- `olive-koala-465874.hostingersite.com`
+- `lightcoral-stingray-175078.hostingersite.com`
+- `/home/u161311303/domains/ssuprint.com/public_html`
+- 기존 SSU PRINT WordPress 설치 경로
+- 기존 SSU PRINT DB, 관리자 계정, 업로드 폴더
+
+장가네 흑염소 배포는 아래 정보가 새로 확정된 뒤에만 진행한다.
+
+| 항목 | 확정 전 기본값 |
+| --- | --- |
+| Hostinger 계정 | 미확정 |
+| 도메인/임시도메인 | 미확정 |
+| WordPress document root | 미확정 |
+| WordPress 관리자 URL | 미확정 |
+| WordPress 관리자 계정 | 미확정 |
+| DB 이름 | Hostinger 자동 생성값 확인 전까지 미확정 |
+| 백업 경로 | 미확정 |
+
+작업자가 Hostinger에 접속했을 때 아래 문자열이 보이면 즉시 중단하고 사용자에게 확인한다.
+
+```text
+ssuprint
+olive-koala
+lightcoral-stingray
+wp.ssuprint.com
+```
+
+업로드 전 확인 문장:
+
+```text
+이 배포 대상은 장가네 흑염소 전용 Hostinger WordPress 설치이며, SSU PRINT 및 다른 기존 사이트가 아니다.
+```
+
+이 문장을 사용자가 명시적으로 확인하기 전에는 실제 업로드, 파일 삭제, 덮어쓰기, 테마 활성화를 하지 않는다.

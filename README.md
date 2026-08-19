@@ -44,3 +44,8 @@ Hostinger 배포는 아직 실행하지 않습니다. 업로드 전 준비와 �
 - 실제 홈페이지용 이미지는 `assets/photos_web`에 최종본만 둡니다.
 - 테마 코드가 완성된 뒤 `tools/build_hostinger_theme_package.sh`로 업로드용 ZIP을 생성합니다.
 - GitHub Push와 Hostinger 백업 전에는 운영 업로드를 진행하지 않습니다.
+
+### 기존 Hostinger 사이트와 분리
+
+이 프로젝트는 기존 SSU PRINT나 다른 Hostinger 사이트와 분리해서 배포합니다.
+`ssuprint.com`, `wp.ssuprint.com`, 과거 Hostinger 임시 도메인, 기존 SSU PRINT document root는 장가네 흑염소 배포 대상이 아닙니다.

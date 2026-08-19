@@ -57,3 +57,10 @@ WordPress 자체 테마 홈페이지 제작 프로젝트다. 공용 규칙과 �
 - Hostinger WordPress 설치 경로, 관리자 로그인, 백업 경로가 확인되기 전에는 업로드하지 않는다.
 - 원본 사진(`assets/photos_original`)과 메뉴 참고 원본(`assets/menu_reference`)은 Git/배포 패키지에서 제외한다.
 - 웹용 최종 이미지만 `assets/photos_web`에 넣고 배포 후보로 삼는다.
+
+## Hostinger 대상 격리 규칙
+
+- 기존 `ssuprint.com`, `wp.ssuprint.com`, 과거 Hostinger 임시 도메인, 다른 고객 사이트 경로를 장가네 흑염소 배포 대상으로 사용하지 않는다.
+- `/home/u161311303/domains/ssuprint.com/public_html`는 SSU PRINT 기록용 경로이며, 이 프로젝트 배포 대상으로 쓰지 않는다.
+- 장가네 흑염소 전용 WordPress 설치 경로와 관리자 URL이 확인되기 전에는 Hostinger 업로드를 중단한다.
+- Hostinger 접속 중 `ssuprint`, `olive-koala`, `lightcoral-stingray`, `wp.ssuprint.com` 문자열이 대상 경로/URL에 보이면 즉시 중단하고 사용자에게 확인한다.
