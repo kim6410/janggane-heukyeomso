@@ -28,7 +28,12 @@ WordPress 자체 테마 홈페이지 제작 프로젝트다. 공용 규칙과 �
 - 비밀번호, 토큰, SSH 키, `.env` 내용을 조회하거나 파일에 기록하지 않는다.
 - 운영 서버 변경 금지, Docker 중지/재시작 금지, DB 변경 금지.
 - 다른 프로젝트(`StoryMaker_1` 등) 파일에 접근하지 않는다.
-- 헤더(`header.php`)와 푸터(`footer.php`)는 각 1개만 두고 모든 화면이 공통 사용한다.
+- 원본 사진(`assets/photos_original`)은 절대 삭제·이동·수정하지 않는다. 편집·배경 합성·최적화가
+  필요하면 `assets/photos_edited`, `assets/photos_web` 등에 복사본만 새로 만든다. (이미지 파일은
+  텍스트처럼 diff 기반 수정이 불가능하므로 이 예외를 둔다 — 단 원본 불변 원칙은 그대로 유지된다.)
+- 손님 얼굴이 나온 사진은 사용 전 동의 여부를 확인한다. 동의 확인 전에는 사용하지 않는다.
+- 헤더(`header.php`)와 푸터(`footer.php`)는 각 1개만 두고 모든 화면이 공통 사용한다. 화면마다
+  복사해서 만들지 않는다.
 - 관리자 로그인은 WordPress 기본 계정/Role·Capability 체계를 그대로 사용한다. 별도 관리자 로그인
   시스템을 만들지 않는다.
 - 실제 후기·가격·서비스가 없으면 만들어내지 않는다. 없는 값은 임시값임을 문서에 명확히 표시한다.
@@ -64,3 +69,11 @@ WordPress 자체 테마 홈페이지 제작 프로젝트다. 공용 규칙과 �
 - `/home/u161311303/domains/ssuprint.com/public_html`는 SSU PRINT 기록용 경로이며, 이 프로젝트 배포 대상으로 쓰지 않는다.
 - 장가네 흑염소 전용 WordPress 설치 경로와 관리자 URL이 확인되기 전에는 Hostinger 업로드를 중단한다.
 - Hostinger 접속 중 `ssuprint`, `olive-koala`, `lightcoral-stingray`, `wp.ssuprint.com` 문자열이 대상 경로/URL에 보이면 즉시 중단하고 사용자에게 확인한다.
+
+## 참고: 이 프로젝트에는 두 개의 Claude 세션이 동시에 작업할 수 있다
+
+1. Dell에서 네이티브로 실행되는 Claude Code 세션 (파일을 직접 열어 이미지도 볼 수 있음)
+2. 클라우드에서 Claude Windows MCP(SSH 브릿지, 텍스트 전용)로 접속하는 세션
+
+두 세션이 겹칠 수 있으므로, 작업 시작 전 항상 `git log --oneline -5`와 `git status --short`로 최신
+상태를 다시 확인하고, 다른 세션이 이미 만든 내용을 덮어쓰지 않는다.
