@@ -90,3 +90,31 @@ contact-floating/faq) 구조에, REFERENCE_지역식당 기준의 `cooking-proce
 4. `template-parts/` 10개 파일 순차 생성
 5. 옵션 페이지 및 CPT 연결
 6. 데스크톱/모바일 검증, `WORK_LOGS` 기록
+
+## 7. Hostinger 업로드 준비
+
+Hostinger에는 완성된 WordPress 테마 ZIP 또는 SSH/SFTP 선별 업로드 방식으로 반영한다.
+현재는 코드 작성 전 단계이므로 업로드 실행은 하지 않고, `HOSTINGER_DEPLOY_PREP.md`의 기준에 따라 준비만 한다.
+
+배포 패키지에 포함할 후보:
+
+- `style.css`
+- `functions.php`
+- `header.php`
+- `footer.php`
+- `front-page.php`
+- `template-parts/`
+- `assets/css/`
+- `assets/js/`
+- `assets/images/`
+- 최종 승인된 `assets/photos_web/` 이미지
+
+배포 패키지에서 제외할 항목:
+
+- 원본 사진 `assets/photos_original/`
+- 메뉴 참고 원본 `assets/menu_reference/`
+- 선별 작업용 `assets/photos_selected/`
+- 편집 작업용 `assets/photos_edited/`
+- `_release/`
+- `.git/`
+- 비밀값 파일

@@ -1,0 +1,34 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Local environment / secrets
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+credentials.json
+secrets.json
+
+# WordPress local/runtime files
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+*.log
+
+# Heavy original media: keep on Dell/Samba, do not commit or package by default
+assets/photos_original/*
+!assets/photos_original/.gitkeep
+assets/menu_reference/*
+!assets/menu_reference/.gitkeep
+
+# Generated/optimized media can be recreated or selectively committed after review
+assets/photos_web/*
+!assets/photos_web/.gitkeep
+
+# Release archives
+_release/*
+!_release/.gitkeep

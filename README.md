@@ -33,3 +33,14 @@
 
 이 폴더는 로컬 git 저장소로 초기화되고 GitHub 원격(`origin`)이 연결되어 있습니다.
 **Push는 사용자가 직접 승인하기 전까지 실행하지 않습니다.** 현재까지는 로컬 커밋까지만 진행합니다.
+
+## Hostinger 업로드 준비
+
+Hostinger 배포는 아직 실행하지 않습니다. 업로드 전 준비와 금지 조건은 `HOSTINGER_DEPLOY_PREP.md`를 따릅니다.
+
+핵심 원칙:
+
+- 원본 사진(`assets/photos_original`)은 Git과 배포 패키지에서 제외합니다.
+- 실제 홈페이지용 이미지는 `assets/photos_web`에 최종본만 둡니다.
+- 테마 코드가 완성된 뒤 `tools/build_hostinger_theme_package.sh`로 업로드용 ZIP을 생성합니다.
+- GitHub Push와 Hostinger 백업 전에는 운영 업로드를 진행하지 않습니다.

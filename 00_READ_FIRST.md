@@ -48,3 +48,12 @@ WordPress 자체 테마 홈페이지 제작 프로젝트다. 공용 규칙과 �
 - `/home/bourne/CLAUDE_WORKSPACE/.claude/rules/seo-local-business.md`
 - `/home/bourne/CLAUDE_WORKSPACE/.claude/rules/token-budget.md`
 - 이 폴더의 `PROJECT_BRIEF.md`, `PHOTO_INVENTORY.md`, `CONTENT_PLAN.md`, `WORDPRESS_THEME_PLAN.md`
+
+## Hostinger 업로드 준비 규칙
+
+- Hostinger 업로드 전 `HOSTINGER_DEPLOY_PREP.md`를 먼저 읽는다.
+- 운영 업로드는 사용자 명시 승인 전까지 실행하지 않는다.
+- GitHub Push가 완료되지 않은 상태에서는 Hostinger 업로드를 진행하지 않는다.
+- Hostinger WordPress 설치 경로, 관리자 로그인, 백업 경로가 확인되기 전에는 업로드하지 않는다.
+- 원본 사진(`assets/photos_original`)과 메뉴 참고 원본(`assets/menu_reference`)은 Git/배포 패키지에서 제외한다.
+- 웹용 최종 이미지만 `assets/photos_web`에 넣고 배포 후보로 삼는다.
