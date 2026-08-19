@@ -345,3 +345,25 @@ Hero 3 / 대표메뉴 6 / 농장·재료 4 / 반찬 3 / 조리과정 3(영상 1 
 - 목록(파일명 그대로 사용, slug 미적용): 20260808_130401.jpg, 130440.jpg, 132917.jpg, 133103.jpg, 134101.jpg,
   134222.jpg, 145142.jpg, 145350.jpg, 145634.mp4, 150137.jpg, 151007.jpg, 151022.jpg, 151051.jpg, 154405.jpg,
   154500.jpg, 154649.jpg, 155416.jpg, 175307.jpg, 175624.jpg, 180059.jpg
+
+## 13. photos_web 웹용 파생 이미지 (테마/미리보기 실사용, 2026-08-20 추가)
+
+WordPress 테마(`template-parts/hero.php`, `menu.php`, `farm-story.php`, `side-dishes.php`)와
+정적 미리보기(`preview/index.html`)가 실제로 참조하는 웹용 파생 이미지 5장입니다.
+원본(`assets/photos_original`)은 그대로 두고, PIL로 리사이즈(최대 1600px)+JPEG quality 78로
+압축한 사본만 `assets/photos_web/`에 둔 것입니다.
+
+| 파일명 | 원본 파일 | 크기 | 사용처 |
+| --- | --- | --- | --- |
+| hero-01.jpg | 20260808_175624.jpg | 289,947 bytes (약 283KB) | Hero 대표 이미지 |
+| hero-02.jpg | 20260808_180059.jpg | 271,298 bytes (약 265KB) | Hero 예비 후보 (현재 미사용, 보관) |
+| menu-01.jpg | 20260808_151007.jpg | 279,491 bytes (약 273KB) | 대표 메뉴(흑염소탕) 카드 |
+| dish-01.jpg | 20260808_154405.jpg | 335,049 bytes (약 327KB) | 직접 담근 반찬(깍두기) 카드 |
+| farm-01.jpg | 20260808_130401.jpg | 121,064 bytes (약 118KB) | 농장직영/재료 이야기 섹션 |
+
+- 총 용량: 약 1.27MB (5장 합계)
+- Git 상태(2026-08-20 기준): `.gitignore`에 `assets/photos_web/*`가 기본 제외되어 있으나, 테마가
+  실제로 참조하는 위 5장만 명시적으로 예외 처리(`!assets/photos_web/파일명.jpg`)하여 검토 후
+  커밋 대상으로 전환함 (원본/선별본은 여전히 제외 상태 유지).
+- 나머지 원본 85개(미확인)는 여전히 `assets/photos_original`에만 존재하며, 육안 확인 전까지
+  `photos_web`으로 파생하지 않음.

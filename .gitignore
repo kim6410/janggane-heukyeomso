@@ -28,6 +28,13 @@ assets/menu_reference/*
 # Generated/optimized media can be recreated or selectively committed after review
 assets/photos_web/*
 !assets/photos_web/.gitkeep
+# 2026-08-20: WordPress 테마/preview가 실제로 참조하는 웹용 파생 이미지 5장은
+# 원본이 아니라 PIL로 리사이즈+압축한 사본이며, 화면 재현을 위해 검토 후 커밋 허용한다.
+!assets/photos_web/hero-01.jpg
+!assets/photos_web/hero-02.jpg
+!assets/photos_web/menu-01.jpg
+!assets/photos_web/dish-01.jpg
+!assets/photos_web/farm-01.jpg
 
 # Release archives
 _release/*

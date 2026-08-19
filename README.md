@@ -4,7 +4,7 @@
 
 - GitHub: `https://github.com/kim6410/janggane-heukyeomso.git`
 - 서버 경로: `/home/bourne/CLAUDE_WORKSPACE/PROJECTS/janggane-heukyeomso`
-- 현재 단계: **기획 문서 작성 완료, WordPress 코드 작성 전**
+- 현재 단계: **기획 문서 작성 완료 + WordPress 테마 1차 화면 초안(껍데기) 작성 완료 — 실제 정보/사진 확정 대기**
 
 ## 문서 구성
 
@@ -15,6 +15,7 @@
 | `PHOTO_INVENTORY.md` | 사진 분류 기준 (대표메뉴/농장재료/조리과정/반찬/매장분위기/보류) |
 | `CONTENT_PLAN.md` | 핵심 키워드, 문구 톤, 섹션별 카피 방향, SEO title/description/H1 후보 |
 | `WORDPRESS_THEME_PLAN.md` | 테마 파일 구조, 관리자 입력 항목, 관리자 로그인 원칙, 완료 기준 |
+| `preview/index.html` | 브라우저에서 바로 확인 가능한 정적 미리보기 (WordPress 없이 디자인/레이아웃 확인용) |
 
 ## 참고한 공용 규칙
 
@@ -27,7 +28,8 @@
 - [x] 기획 문서 6종 작성
 - [ ] 사장님 확인 (상호 확정, 질문 목록 회신)
 - [ ] 실제 사진 확보 및 `PHOTO_INVENTORY.md` 매핑
-- [ ] WordPress 테마 코드 작성 (사용자 승인 후 시작)
+- [x] WordPress 테마 1차 화면 초안(껍데기) 작성 완료 (`preview/index.html`로 브라우저 확인 가능, 상호/연락처/가격 등 임시값 다수 포함)
+- [ ] 사장님 실제 정보(전화/주소/영업시간/가격 등) 확보 및 반영, 사진 추가 매핑
 
 ## Git / GitHub 안내
 

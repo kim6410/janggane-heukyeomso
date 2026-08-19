@@ -17,8 +17,8 @@ WordPress 자체 테마 홈페이지 제작 프로젝트다. 공용 규칙과 �
 
 ## 현재 단계
 
-**기획 문서 작성 완료. WordPress 코드(style.css, functions.php, header.php 등)는 아직 작성하지 않았다.**
-사장님 확인(상호 확정, 질문 목록 회신)과 실제 사진 확보 이후 코드 작성 단계로 진행한다.
+**WordPress 테마 1차 화면 초안(껍데기)까지 작성 완료.** `style.css`, `functions.php`, `header.php`, `footer.php`, `front-page.php`, `template-parts/*.php` 10개, `preview/index.html`(브라우저 확인용 정적 미리보기)까지 커밋됨(commit `663dc73`). 상호/전화/주소/영업시간/가격 등은 전부 임시값(TODO)이다.
+사장님 확인(상호 확정, 질문 목록 회신, 실제 사진 확보) 이후 실제 값 반영·2차 다듬기 단계로 진행한다.
 
 ## 작업 규칙
 
