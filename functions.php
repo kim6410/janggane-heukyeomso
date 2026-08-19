@@ -107,7 +107,78 @@ function janggane_get_menu_items() {
 }
 
 /**
+ * 주 메뉴(헤더 내비게이션) 항목.
+ *
+ * TODO: 지금은 코드 배열입니다. 실제 WordPress 페이지가 생성되고 register_nav_menus()의
+ * 'primary' 메뉴를 관리자에서 지정하면, 이 배열 대신 wp_nav_menu()로 교체할 수 있습니다.
+ * 지금 단계는 페이지가 아직 없어 슬러그만 미리 정해둔 상태입니다(2026-08-20 다중 페이지 보강).
+ *
+ * @return array
+ */
+function janggane_get_primary_nav() {
+	return array(
+		array(
+			'label'   => '홈',
+			'url'     => home_url( '/' ),
+			'is_home' => true,
+		),
+		array(
+			'label'    => '메뉴소개',
+			'url'      => home_url( '/menu/' ),
+			'template' => 'template-page-menu.php',
+		),
+		array(
+			'label'    => '농장직영 이야기',
+			'url'      => home_url( '/farm/' ),
+			'template' => 'template-page-farm.php',
+		),
+		array(
+			'label'    => '반찬과 손맛',
+			'url'      => home_url( '/side-dishes/' ),
+			'template' => 'template-page-side-dishes.php',
+		),
+		array(
+			'label'    => '조리과정',
+			'url'      => home_url( '/cooking/' ),
+			'template' => 'template-page-cooking.php',
+		),
+		array(
+			'label'    => '매장안내',
+			'url'      => home_url( '/store/' ),
+			'template' => 'template-page-store.php',
+		),
+		array(
+			'label'    => '오시는길',
+			'url'      => home_url( '/location/' ),
+			'template' => 'template-page-location.php',
+		),
+		array(
+			'label'    => '예약문의',
+			'url'      => home_url( '/contact/' ),
+			'template' => 'template-page-contact.php',
+		),
+	);
+}
+
+/**
+ * 현재 화면이 주어진 내비게이션 항목과 일치하는지 판단(헤더 active 표시용).
+ *
+ * @param array $item janggane_get_primary_nav() 항목 1개.
+ * @return bool
+ */
+function janggane_is_active_nav_item( $item ) {
+	if ( ! empty( $item['is_home'] ) ) {
+		return is_front_page();
+	}
+	if ( ! empty( $item['template'] ) ) {
+		return is_page_template( $item['template'] );
+	}
+	return false;
+}
+
+/**
  * 향후 확장 메모 (지금 단계에서는 구현하지 않음, TODO만 남김):
+ * - wp_nav_menu(): janggane_get_primary_nav() 하드코딩 배열을 실제 관리자 메뉴로 교체.
  * - CPT `menu` 등록: 메뉴명/가격/인분/사진을 관리자에서 직접 관리하고 싶을 때 위
  *   janggane_get_menu_items() 를 register_post_type() 기반 쿼리로 교체.
  * - CPT `faq`, `review`: FAQ/후기도 같은 방식으로 CPT 또는 repeater로 이전.
