@@ -60,14 +60,16 @@ add_action( 'wp_enqueue_scripts', 'janggane_theme_assets' );
 function janggane_get_business_info( $key ) {
 	// TODO(임시값 — WordPress 옵션 페이지 연결 전):
 	$defaults = array(
-		'phone'          => '052-294-9947',
-		'address'        => '울산 북구 호계3길 17-17 (지번 호계동 681-11) · 우편번호 44229',
+		'phone'          => '0507-1351-9947',
+		'address'        => '울산 북구 호계3길 17-17 1층 (지번 호계동 681-11) · 우편번호 44229',
 		'map_url'        => 'https://place.map.kakao.com/347310914', // 카카오맵.
 		'map_url_naver'  => 'https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%20%EB%B6%81%EA%B5%AC%20%ED%98%B8%EA%B3%843%EA%B8%B8%2017-17', // 네이버지도 주소 검색.
 		'kakao_url'      => '', // TODO: 값이 비어 있으면 카카오톡 버튼을 숨긴다.
-		'hours'          => '영업시간 확인 중 (사장님 확인 필요)', // TODO.
-		'closed_day'     => '휴무일 확인 중', // TODO.
+		'hours'          => '매일 10:00 - 19:30 (라스트오더 19:00)',
+		'closed_day'     => '매달 셋째 주 월요일 정기휴무',
 		'parking'        => '20대 주차 가능',
+		'location_note'  => '호계시장 초입, 구 호계역 건너편, 농소농협 맞은편',
+		'instagram_url'  => 'https://www.instagram.com/nhs550424/',
 		'kakao_roughmap_container_id' => 'daumRoughmapContainer1787234685074',
 		'kakao_roughmap_timestamp'    => '1787234685074',
 		'kakao_roughmap_key'          => '2uqp9ethy6ng',
@@ -108,6 +110,30 @@ function janggane_get_menu_items() {
 			'price' => '55,000원 (中)',
 			'desc'  => '불맛과 양념이 어우러진 흑염소불고기입니다.',
 			'image' => 'menu-03.jpg',
+		),
+		array(
+			'name'  => '곱창전골',
+			'price' => '24,000원~46,000원 (小/中/大, 2인 이상)',
+			'desc'  => '진하게 우려낸 국물에 곱창을 듬뿍 넣고 끓인 전골입니다.',
+			'image' => '',
+		),
+		array(
+			'name'  => '흑염소육회',
+			'price' => '55,000원 (中)',
+			'desc'  => '신선한 흑염소로 만든 육회입니다.',
+			'image' => '',
+		),
+		array(
+			'name'  => '소머리곰탕',
+			'price' => '10,000원',
+			'desc'  => '진하게 우려낸 소머리곰탕입니다.',
+			'image' => '',
+		),
+		array(
+			'name'  => '한우국밥',
+			'price' => '10,000원',
+			'desc'  => '깊은 맛의 한우국밥입니다.',
+			'image' => '',
 		),
 	);
 }

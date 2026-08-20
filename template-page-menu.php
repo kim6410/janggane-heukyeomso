@@ -19,7 +19,7 @@ get_header();
 		null,
 		array(
 			'label' => '메뉴소개',
-			'desc'  => '흑염소탕 · 흑염소전골 · 흑염소불고기 — 가격과 인분 기준은 사장님 확인 후 채워집니다.',
+			'desc'  => '흑염소탕 · 흑염소불고기 · 곱창전골 등 — 실제 메뉴판 기준 가격입니다.',
 		)
 	);
 	get_template_part( 'template-parts/menu' );

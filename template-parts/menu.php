@@ -13,7 +13,7 @@ $web_dir    = get_template_directory_uri() . '/assets/photos_web/';
 <section id="menu-section" class="section">
 	<div class="container">
 		<span class="section-eyebrow">대표 메뉴</span>
-		<h2>흑염소탕 · 흑염소전골 · 흑염소불고기</h2>
+		<h2>흑염소탕 · 흑염소불고기 · 곱창전골 외</h2>
 		<p class="section-desc">농장에서 직접 키운 흑염소로 정성껏 끓인 대표 메뉴입니다.</p>
 
 		<div class="menu-grid">
