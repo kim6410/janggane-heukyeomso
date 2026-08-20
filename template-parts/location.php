@@ -31,12 +31,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</tr>
 			<tr>
 				<th>주차</th>
-				<td>주차 가능 여부 확인 중 (TODO — PROJECT_BRIEF.md 8-3절)</td>
+				<td><?php echo esc_html( janggane_get_business_info( 'parking' ) ); ?></td>
 			</tr>
 		</table>
 
-		<div class="map-embed-placeholder">
-			지도 임베드 준비 중 (네이버지도/카카오맵 링크 확정 후 삽입 — TODO)
+		<div class="map-embed">
+			<div id="<?php echo esc_attr( janggane_get_business_info( 'kakao_roughmap_container_id' ) ); ?>" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 		</div>
+		<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+		<script charset="UTF-8">
+			new daum.roughmap.Lander({
+				"timestamp" : "<?php echo esc_js( janggane_get_business_info( 'kakao_roughmap_timestamp' ) ); ?>",
+				"key" : "<?php echo esc_js( janggane_get_business_info( 'kakao_roughmap_key' ) ); ?>",
+				"mapWidth" : "640",
+				"mapHeight" : "360"
+			}).render();
+		</script>
 	</div>
 </section>

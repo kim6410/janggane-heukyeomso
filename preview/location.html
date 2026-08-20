@@ -65,27 +65,33 @@
       <h2>오시는 길</h2>
 
       <table class="info-table">
-        <tr><th>주소</th><td>울산 북구 호계동 681-11 1층</td></tr>
+        <tr><th>주소</th><td>울산 북구 호계3길 17-17 (지번 호계동 681-11) · 우편번호 44229</td></tr>
         <tr><th>전화</th><td><a href="tel:0522949947">052-294-9947</a></td></tr>
         <tr><th>영업시간</th><td>영업시간 확인 중 (사장님 확인 필요)</td></tr>
         <tr><th>휴무일</th><td>휴무일 확인 중</td></tr>
-        <tr><th>주차</th><td>주차 가능 여부 확인 중 (TODO)</td></tr>
+        <tr><th>주차</th><td>20대 주차 가능</td></tr>
       </table>
 
-      <div class="map-embed-placeholder">
-        지도 임베드 준비 중 (네이버지도/카카오맵 링크 확정 후 삽입 — TODO)
+      <div class="map-embed">
+        <div id="daumRoughmapContainer1787234685074" class="root_daum_roughmap root_daum_roughmap_landing"></div>
       </div>
+      <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+      <script charset="UTF-8">
+          new daum.roughmap.Lander({
+              "timestamp" : "1787234685074",
+              "key" : "2uqp9ethy6ng",
+              "mapWidth" : "640",
+              "mapHeight" : "360"
+          }).render();
+      </script>
     </div>
   </section>
 
   <section class="section section--alt">
     <div class="container">
       <div class="map-buttons">
-        <a class="btn btn--outline" href="#map-미설정">네이버지도로 보기</a>
-        <a class="btn btn--outline" href="#map-미설정">카카오맵으로 보기</a>
-      </div>
-      <div class="menu-note" style="margin-top:14px;">
-        지도 링크는 TODO 상태입니다. 실제 네이버지도/카카오맵 링크가 확정되면 각 버튼에 연결합니다.
+        <a class="btn btn--outline" href="https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%20%EB%B6%81%EA%B5%AC%20%ED%98%B8%EA%B3%843%EA%B8%B8%2017-17" target="_blank" rel="noopener">네이버지도로 보기</a>
+        <a class="btn btn--outline" href="https://place.map.kakao.com/347310914" target="_blank" rel="noopener">카카오맵으로 보기</a>
       </div>
     </div>
   </section>
@@ -95,7 +101,7 @@
 <footer class="site-footer">
   <div class="container">
     <div>정자골 장가네 농장직영 흑염소 보양탕</div>
-    <div>울산 북구 호계동 681-11 1층 · 052-294-9947 · 사업자등록번호 338-09-02696</div>
+    <div>울산 북구 호계3길 17-17 · 052-294-9947 · 사업자등록번호 338-09-02696</div>
     <div class="site-footer__notice">
       이 페이지는 1차 화면 초안입니다. 상호·연락처·가격·영업정보는 확정 전 임시값이 포함되어
       있으며(TODO 표시), 사장님 확인 후 실제 값으로 교체됩니다.
@@ -106,7 +112,7 @@
 <nav class="contact-floating" aria-label="바로 연락하기">
   <div class="contact-floating__inner">
     <a class="btn btn--primary" href="tel:0522949947"><svg class="icon-tel" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/></svg><br>전화하기</a>
-    <a class="btn btn--outline" href="#map-미설정">📍<br>길찾기</a>
+    <a class="btn btn--outline" href="https://place.map.kakao.com/347310914" target="_blank" rel="noopener">📍<br>길찾기</a>
     <a class="btn btn--red" href="index.html#menu-section">🍲<br>메뉴 보기</a>
   </div>
 </nav>

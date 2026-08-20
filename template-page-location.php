@@ -26,11 +26,8 @@ get_header();
 	<section class="section">
 		<div class="container">
 			<div class="map-buttons">
-				<a class="btn btn--outline" href="<?php echo esc_url( janggane_get_business_info( 'map_url' ) ); ?>">네이버지도로 보기</a>
-				<a class="btn btn--outline" href="<?php echo esc_url( janggane_get_business_info( 'map_url' ) ); ?>">카카오맵으로 보기</a>
-			</div>
-			<div class="menu-note" style="margin-top:14px;">
-				지도 링크는 TODO 상태입니다. 실제 네이버지도/카카오맵 링크가 확정되면 각 버튼에 연결합니다.
+				<a class="btn btn--outline" href="<?php echo esc_url( janggane_get_business_info( 'map_url_naver' ) ); ?>" target="_blank" rel="noopener">네이버지도로 보기</a>
+				<a class="btn btn--outline" href="<?php echo esc_url( janggane_get_business_info( 'map_url' ) ); ?>" target="_blank" rel="noopener">카카오맵으로 보기</a>
 			</div>
 		</div>
 	</section>

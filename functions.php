@@ -61,11 +61,16 @@ function janggane_get_business_info( $key ) {
 	// TODO(임시값 — WordPress 옵션 페이지 연결 전):
 	$defaults = array(
 		'phone'          => '052-294-9947',
-		'address'        => '울산 북구 호계동 681-11 1층',
-		'map_url'        => '#map-미설정', // TODO: 네이버지도/카카오맵 링크.
+		'address'        => '울산 북구 호계3길 17-17 (지번 호계동 681-11) · 우편번호 44229',
+		'map_url'        => 'https://place.map.kakao.com/347310914', // 카카오맵.
+		'map_url_naver'  => 'https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%20%EB%B6%81%EA%B5%AC%20%ED%98%B8%EA%B3%843%EA%B8%B8%2017-17', // 네이버지도 주소 검색.
 		'kakao_url'      => '', // TODO: 값이 비어 있으면 카카오톡 버튼을 숨긴다.
 		'hours'          => '영업시간 확인 중 (사장님 확인 필요)', // TODO.
 		'closed_day'     => '휴무일 확인 중', // TODO.
+		'parking'        => '20대 주차 가능',
+		'kakao_roughmap_container_id' => 'daumRoughmapContainer1787234685074',
+		'kakao_roughmap_timestamp'    => '1787234685074',
+		'kakao_roughmap_key'          => '2uqp9ethy6ng',
 		'brand_name'     => '정자골 장가네 농장직영 흑염소 보양탕',
 		'brand_name_short' => '장가네 흑염소',
 		'business_reg_no'  => '338-09-02696',
