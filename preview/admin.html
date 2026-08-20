@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>관리자 로그인 — 정자골 장가네 농장직영 흑염소 보양탕</title>
+<link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+
+<div class="preview-banner">
+  관리자 화면 미리보기입니다. 실제 운영에서는 WordPress 기본 로그인(/wp-login.php)만 사용합니다.
+</div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="index.html">장가네 흑염소</a>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+      <span class="nav-toggle__icon" aria-hidden="true">☰</span>
+      <span class="nav-toggle__label">메뉴</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="주 메뉴">
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="menu.html">메뉴소개</a></li>
+        <li><a href="farm.html">농장직영 이야기</a></li>
+        <li><a href="side-dishes.html">반찬과 손맛</a></li>
+        <li><a href="cooking.html">조리과정</a></li>
+        <li><a href="store.html">매장안내</a></li>
+        <li><a href="location.html">오시는길</a></li>
+        <li><a href="contact.html">예약문의</a></li>
+        <li><a href="admin.html" class="active" aria-current="page">관리자</a></li>
+      </ul>
+    </nav>
+    <a class="site-header__phone" href="tel:0000000000">📞 000-0000-0000</a>
+    <a class="site-header__admin" href="admin.html">관리자 로그인</a>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-intro">
+    <div class="container">
+      <div class="page-intro__breadcrumb"><a href="index.html">홈</a> &gt; 관리자</div>
+      <h1>사장님 관리 화면</h1>
+      <p class="page-intro__desc">별도 로그인 시스템을 만들지 않고 WordPress 기본 관리자 로그인과 권한 체계를 그대로 사용합니다.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="admin-panel">
+        <span class="section-eyebrow">WordPress Admin</span>
+        <h2>운영 정보는 한 곳에서만 수정</h2>
+        <p class="section-desc">전화번호, 주소, 영업시간, 지도 링크, 메뉴 가격, FAQ는 WordPress 관리자에서 관리하고 프론트 화면은 같은 값을 읽습니다.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="/wp-login.php">WordPress 로그인으로 이동</a>
+          <a class="btn btn--outline" href="index.html">홈 미리보기</a>
+        </div>
+        <div class="admin-panel__grid">
+          <div class="admin-login-card"><strong>업체 기본정보</strong>상호, 전화번호, 주소, 영업시간, 휴무일, 주차 안내</div>
+          <div class="admin-login-card"><strong>메뉴와 가격</strong>흑염소탕, 전골, 불고기 가격과 인분 기준, 대표 사진</div>
+          <div class="admin-login-card"><strong>사진 관리</strong>음식, 반찬, 농장, 매장 사진과 alt 텍스트</div>
+          <div class="admin-login-card"><strong>FAQ/후기</strong>예약, 포장, 단체석, 주차 안내와 실제 후기만 게시</div>
+        </div>
+        <div class="menu-note">비밀번호 원문, API 키, 토큰, 서버 접속 정보는 테마 파일에 저장하지 않습니다.</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><div class="footer-title">정자골 장가네 농장직영 흑염소 보양탕</div><div class="footer-muted">울산 북구 호계동 · 정보 확정 전 임시값</div></div>
+    <div><strong>운영</strong><br><span class="footer-muted">영업시간/휴무일 확인 중</span></div>
+    <div><strong>관리</strong><br><a href="/wp-login.php">WordPress 관리자 로그인</a></div>
+  </div>
+</footer>
+
+<nav class="contact-floating" aria-label="바로 연락하기">
+  <div class="contact-floating__inner">
+    <a class="btn btn--primary" href="tel:0000000000">📞<br>전화하기</a>
+    <a class="btn btn--outline" href="#map-미설정">📍<br>길찾기</a>
+    <a class="btn btn--red" href="menu.html">🍲<br>메뉴 보기</a>
+  </div>
+</nav>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

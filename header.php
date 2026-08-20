@@ -51,5 +51,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<a class="site-header__phone" href="tel:<?php echo esc_attr( preg_replace( '/[^0-9+]/', '', janggane_get_business_info( 'phone' ) ) ); ?>">
 			📞 <?php echo esc_html( janggane_get_business_info( 'phone' ) ); ?>
 		</a>
+
+		<a class="site-header__admin" href="<?php echo esc_url( wp_login_url() ); ?>">관리자 로그인</a>
 	</div>
 </header>
