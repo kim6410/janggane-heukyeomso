@@ -10,17 +10,18 @@ if ( ! defined( ABSPATH ) ) {
 	<footer class="site-footer">
 		<div class="container footer-grid">
 			<div>
-				<div class="footer-title"><?php echo esc_html( janggane_get_business_info( brand_name ) ); ?></div>
+				<div class="footer-title"><?php echo esc_html( janggane_get_business_info( 'brand_name' ) ); ?></div>
 				<div class="footer-muted">
-					<?php echo esc_html( janggane_get_business_info( address ) ); ?><br>
-					<?php echo esc_html( janggane_get_business_info( phone ) ); ?>
+					<?php echo esc_html( janggane_get_business_info( 'address' ) ); ?><br>
+					<?php echo esc_html( janggane_get_business_info( 'phone' ) ); ?><br>
+					사업자등록번호 <?php echo esc_html( janggane_get_business_info( 'business_reg_no' ) ); ?>
 				</div>
 			</div>
 			<div>
 				<strong>영업 정보</strong><br>
 				<span class="footer-muted">
-					<?php echo esc_html( janggane_get_business_info( hours ) ); ?><br>
-					<?php echo esc_html( janggane_get_business_info( closed_day ) ); ?>
+					<?php echo esc_html( janggane_get_business_info( 'hours' ) ); ?><br>
+					<?php echo esc_html( janggane_get_business_info( 'closed_day' ) ); ?>
 				</span>
 			</div>
 			<div>

@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<p class="section-desc">부모님 모시고 오기 좋은 공간입니다. (좌석/접근성 정보 확정 후 문구 보강 예정)</p>
 
 		<div class="gallery-grid">
-			<div class="gallery-grid__item gallery-grid__item--placeholder">매장 사진<br>준비 중</div>
+			<div class="gallery-grid__item"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/photos_web/gallery-01.jpg' ); ?>" alt="매장 내부 (사진 내용 확인 전 임시 배치)"></div>
 			<div class="gallery-grid__item gallery-grid__item--placeholder">매장 사진<br>준비 중</div>
 			<div class="gallery-grid__item gallery-grid__item--placeholder">매장 사진<br>준비 중</div>
 		</div>

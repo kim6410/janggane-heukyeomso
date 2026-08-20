@@ -60,14 +60,15 @@ add_action( 'wp_enqueue_scripts', 'janggane_theme_assets' );
 function janggane_get_business_info( $key ) {
 	// TODO(임시값 — WordPress 옵션 페이지 연결 전):
 	$defaults = array(
-		'phone'          => '000-0000-0000', // TODO: 실제 전화번호로 교체.
-		'address'        => '울산 북구 호계동 (정확한 주소 확인 필요)', // TODO.
+		'phone'          => '052-294-9947',
+		'address'        => '울산 북구 호계동 681-11 1층',
 		'map_url'        => '#map-미설정', // TODO: 네이버지도/카카오맵 링크.
 		'kakao_url'      => '', // TODO: 값이 비어 있으면 카카오톡 버튼을 숨긴다.
 		'hours'          => '영업시간 확인 중 (사장님 확인 필요)', // TODO.
 		'closed_day'     => '휴무일 확인 중', // TODO.
 		'brand_name'     => '정자골 장가네 농장직영 흑염소 보양탕',
 		'brand_name_short' => '장가네 흑염소',
+		'business_reg_no'  => '338-09-02696',
 	);
 
 	return isset( $defaults[ $key ] ) ? $defaults[ $key ] : '';
@@ -87,21 +88,21 @@ function janggane_get_menu_items() {
 	return array(
 		array(
 			'name'  => '흑염소탕',
-			'price' => '가격 확인 중 (TODO)',
+			'price' => '15,000원',
 			'desc'  => '농장에서 직접 키운 흑염소로 깊게 끓인 보양탕입니다. (문구 초안, CONTENT_PLAN.md 3-2 참고)',
 			'image' => 'menu-01.jpg',
 		),
 		array(
 			'name'  => '흑염소전골',
 			'price' => '가격 확인 중 (TODO)',
-			'desc'  => '재료를 아낌없이 넣고 끓인 든든한 전골입니다. (문구 초안, 실제 사진 확보 전)',
-			'image' => '',
+			'desc'  => '재료를 아낌없이 넣고 끓인 든든한 전골입니다.',
+			'image' => 'menu-02.jpg',
 		),
 		array(
 			'name'  => '흑염소불고기',
-			'price' => '가격 확인 중 (TODO)',
-			'desc'  => '불맛과 양념이 어우러진 흑염소불고기입니다. (문구 초안, 실제 사진 확보 전)',
-			'image' => '',
+			'price' => '55,000원 (中)',
+			'desc'  => '불맛과 양념이 어우러진 흑염소불고기입니다.',
+			'image' => 'menu-03.jpg',
 		),
 	);
 }

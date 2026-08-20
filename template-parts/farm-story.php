@@ -23,6 +23,7 @@ $farm_image = get_template_directory_uri() . '/assets/photos_web/farm-01.jpg';
 					<span class="trust-tag">농장직영</span>
 					<span class="trust-tag">직접 손질한 재료</span>
 					<span class="trust-tag">정직한 한 그릇</span>
+					<span class="trust-tag">쌀·김치·고춧가루 국내산</span>
 				</div>
 			</div>
 		</div>
