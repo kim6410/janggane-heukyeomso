@@ -20,7 +20,7 @@ $hero_image = get_template_directory_uri() . '/assets/photos_web/hero-01.jpg';
 		<h1 class="hero__title"><?php echo esc_html( janggane_get_business_info( 'brand_name' ) ); ?></h1>
 		<p class="hero__subtitle">직접 손질한 재료와 깊게 끓인 국물, 울산에서 든든하게 챙기는 보양식 한 그릇</p>
 		<div class="hero__cta">
-			<a class="btn btn--primary" href="tel:<?php echo esc_attr( preg_replace( '/[^0-9+]/', '', janggane_get_business_info( 'phone' ) ) ); ?>">📞 전화 예약</a>
+			<a class="btn btn--primary" href="tel:<?php echo esc_attr( preg_replace( '/[^0-9+]/', '', janggane_get_business_info( 'phone' ) ) ); ?>"><svg class="icon-tel" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/></svg> 전화 예약</a>
 			<a class="btn btn--outline" href="<?php echo esc_url( janggane_get_business_info( 'map_url' ) ); ?>">📍 길찾기</a>
 			<a class="btn btn--outline" href="#menu-section" data-scroll-to="#menu-section">🍲 메뉴 보기</a>
 		</div>

@@ -16,6 +16,7 @@
   --green-tint: #eef2ec;
   --red: #a8452f;
   --red-tint: #f6e8e2;
+  --jade: #a9d8c4;
   --brass: #b98d4f;
   --brass-soft: #f1e3c6;
   --line: rgba(42, 35, 28, 0.1);
@@ -391,6 +392,7 @@ p { margin: 0 0 14px; }
   line-height: 1.15;
 }
 .btn--red { background: var(--green); color: #fbf6ea; }
+.icon-tel { width: 15px; height: 15px; fill: var(--jade); vertical-align: -2px; }
 .site-footer__notice { color: rgba(251,246,234,.72); font-size: 13.5px; margin-top: 10px; }
 .map-embed-placeholder, .faq-item {
   background: var(--paper-strong);
