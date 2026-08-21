@@ -62,8 +62,9 @@ function janggane_get_business_info( $key ) {
 	$defaults = array(
 		'phone'          => '0507-1351-9947',
 		'address'        => '울산 북구 호계3길 17-17 1층 (지번 호계동 681-11) · 우편번호 44229',
+		'farm_address'   => '울산 북구 정자동 537번지', // 농장 주소(매장과 별도).
 		'map_url'        => 'https://place.map.kakao.com/347310914', // 카카오맵.
-		'map_url_naver'  => 'https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%20%EB%B6%81%EA%B5%AC%20%ED%98%B8%EA%B3%843%EA%B8%B8%2017-17', // 네이버지도 주소 검색.
+		'map_url_naver'  => 'https://map.naver.com/p/entry/place/2096400675', // 네이버지도 플레이스 링크.
 		'kakao_url'      => '', // TODO: 값이 비어 있으면 카카오톡 버튼을 숨긴다.
 		'hours'          => '매일 10:00 - 19:30 (라스트오더 19:00)',
 		'closed_day'     => '매달 셋째 주 월요일 정기휴무',

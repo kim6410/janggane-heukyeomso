@@ -25,6 +25,7 @@ $farm_image = get_template_directory_uri() . '/assets/photos_web/farm-01.jpg';
 					<span class="trust-tag">정직한 한 그릇</span>
 					<span class="trust-tag">쌀·김치·고춧가루 국내산</span>
 				</div>
+				<p class="menu-note" style="margin-top:10px;">농장 주소: <?php echo esc_html( janggane_get_business_info( 'farm_address' ) ); ?></p>
 			</div>
 		</div>
 	</div>
